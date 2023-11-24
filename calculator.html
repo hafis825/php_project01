@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<style>
+    h2 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .body-info {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 600px;
+        font-size: 24px;
+        margin: 0 auto;
+        margin-top: 120px;
+        padding: 24px;
+        border-radius: 12px;
+        background-color: rgba(211, 211, 211, 0.6);
+        
+        
+    }
+
+</style>
+
+<body>
+    <h2>โปรแกรมเครื่องคิดเลข</h2>
+    <div class="body-info">
+        <form action="process_calculator.php" method="get">
+            <div class="1">
+                <label for="">เลขตัวเลข</label>
+                <input type="number" name="num1"> 
+            </div>
+            
+            <div class="2">
+                <label for="">เลขตัวเลข</label>
+                <input type="number" name="num2">
+            </div>
+            
+
+            <select name="calcu">
+                <option value="เครื่องหมาย">กรุณาเลือกเครื่องหมาย</option>
+                <option value="บวก">บวก( + )</option>
+                <option value="ลบ">ลบ( - )</option>
+                <option value="คูณ">คูณ( * )</option>
+                <option value="หาร">หาร( ÷ )</option>
+            </select>
+
+            <input type="submit" value="check">
+
+        </form>
+    </div>
+</body>
+</html>
