@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanling</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+    * {
+        box-sizing: border-box;
+        letter-spacing: 0.05rem;
+        outline: 0 none;
+        margin: 0;
+        padding: 0;
+        font-family: 'Kanit', sans-serif;
+    }
+
+
+    .body-info {
+        width: 500px;
+        padding: 3rem;
+        margin: 0 auto;
+        margin-top: 120px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        background-color: #333333be;
+        box-shadow: rgba(51, 51, 51, 0.5) 0 2px 5px 0;
+    }
+
+    .form-info,
+    .form-select {
+        padding: 4px;
+
+        & input {
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+        }
+    }
+
+    select {
+        appearance: none;
+        padding: 0 30px 0 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        line-height: 36px;
+        height: 36px;
+    }
+
+    .form-submit input{
+        background-color: #fff;
+        border: 1px solid #d5d9d9;
+        border-radius: 8px;
+        box-shadow: rgba(51, 51, 51, 0.5) 0 2px 5px 0;
+        box-sizing: border-box;
+        color: #0f1111;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 29px;
+        padding: 0 10px 0 11px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        font-family: 'Kanit', sans-serif;
+        width: 100px;
+    }
+
+</style>
+
+<body>
+    <div class="body-info">
+    <form action="work_hanling_result.php" method="post">
+        <div class="form-info">
+            <label for="">File Name : </label>
+            <input type="text" name="filename" placeholder="dictionary.txt">
+        </div>
+
+      
+
+        <div class="form-info">
+            <label for="">Text : </label>
+            <input type="Text" name="text1">
+        </div>
+
+        <div class="form-info">
+            <label for="">Text : </label>
+            <input type="Text" name="text2">
+        </div>
+
+        <div class="form-info">
+            <label for="">Text : </label>
+            <input type="Text" name="text3">
+        </div>
+
+        <div class="form-select">
+            <select name="mode">
+                <option value="r">Open File</option>
+                <option value="w">Creates New File</option>
+                <option value="a">Creates New Data</option>
+            </select>
+        </div>
+        
+        <div class="form-submit">
+            <input type="submit" value="Send">
+        </div>
+
+
+    </form>
+    </div>
+</body>
+</html>
